@@ -17,9 +17,9 @@ let result = undefined;
 let Ncount = parseInt(count);
 
 if (Ncount > 1 || Ncount == 0)
-  result = Ncount + noun + 's';
+  result = `${Ncount} ${noun}s`;
 else
-  result = Ncount + noun;
+  result =`${Ncount} ${noun}`;
 
 // DO NOT CHANGE ANYTHING BELOW THIS LINE.
 console.log('result= ' + result);
