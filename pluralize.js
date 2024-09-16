@@ -13,7 +13,13 @@ console.log('count is ' + count);
 // TODO: Set the result to a string of the number and a noun in pluralized form, like
 // "5 cats" or "1 dog", given a noun and count from above. For example, if noun is "cat" and count
 // is 5, `result` should be "5 cats".
-const result = undefined;
+let result = undefined;
+let Ncount = parseInt(count);
+
+if (Ncount > 1 || Ncount == 0)
+  result = Ncount + noun + 's';
+else
+  result = Ncount + noun;
 
 // DO NOT CHANGE ANYTHING BELOW THIS LINE.
 console.log('result= ' + result);
