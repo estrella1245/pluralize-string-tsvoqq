@@ -14,12 +14,11 @@ console.log('count is ' + count);
 // "5 cats" or "1 dog", given a noun and count from above. For example, if noun is "cat" and count
 // is 5, `result` should be "5 cats".
 let result = undefined;
-let Ncount = parseInt(count);
 
-if (Ncount > 1 || Ncount == 0)
-  result = `${Ncount} ${noun}s`;
+if (parseInt(count) != 1 )
+  result = `${count} ${noun}s`;
 else
-  result =`${Ncount} ${noun}`;
+  result =`${count} ${noun}`;
 
 // DO NOT CHANGE ANYTHING BELOW THIS LINE.
 console.log('result= ' + result);
